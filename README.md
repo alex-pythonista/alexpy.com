@@ -1,13 +1,22 @@
+# alexpy.com
+
+Personal website built with Hugo using the [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console) theme by [Marcin Mierzejewski](https://github.com/mrmierzejewski).
+
+For Hugo setup and installation, refer to the [Hugo Documentation](https://gohugo.io/documentation/).
+
+---
+
 # Content Creation Guide
 
-This guide covers how to create and manage content for your Hugo site using the hugo-theme-console theme.
+This guide covers how to create and manage content for this Hugo site.
 
 ## Table of Contents
 1. [Creating Blog Posts](#creating-blog-posts)
 2. [Creating Pages](#creating-pages)
 3. [Creating Photo Gallery](#creating-photo-gallery)
-4. [Front Matter Reference](#front-matter-reference)
-5. [Content Organization](#content-organization)
+4. [Managing Career Section](#managing-career-section)
+5. [Front Matter Reference](#front-matter-reference)
+6. [Content Organization](#content-organization)
 
 ---
 
@@ -182,6 +191,55 @@ The colors were absolutely stunning that evening.
 - **`image = "filename.jpg"`**: Must match the actual filename in the directory
 - **File location**: Photo and `index.md` must be in the same directory
 - **Supported formats**: JPG, PNG, WebP
+
+---
+
+## Managing Career Section
+
+The career section appears on the homepage and is managed through a single data file.
+
+**File**: `data/career.yaml`
+
+### Structure
+
+```yaml
+positions:
+  - title: "Senior Software Engineer"
+    company: "Tech Corp"
+    company_url: "https://example.com/techcorp"
+    start_date: "2023-01"
+    end_date: "Present"
+    contributions:
+      - "Led development of microservices architecture serving 1M+ users"
+      - "Improved API response time by 40% through optimization"
+      - "Mentored team of 5 junior engineers"
+```
+
+### Adding a New Position
+
+Simply add a new entry to the `positions` list in `data/career.yaml`:
+
+```yaml
+positions:
+  - title: "Your Job Title"
+    company: "Company Name"
+    company_url: "https://company-website.com"
+    start_date: "YYYY-MM"
+    end_date: "Present"  # or "YYYY-MM"
+    contributions:
+      - "Your contribution or achievement"
+      - "Another contribution"
+      - "Add as many as you need"
+```
+
+### Editing Career Information
+
+1. Open `data/career.yaml`
+2. Edit any field (title, company, dates, contributions)
+3. Save the file
+4. The changes will automatically appear on your homepage
+
+**Note**: The career section is rendered using the partial template at `layouts/partials/career.html`, but you should only need to edit the YAML data file.
 
 ---
 
