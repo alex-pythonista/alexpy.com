@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on visitor@alexpy</title>
+    <link>http://localhost:32977/about/</link>
+    <description>Recent content in About on visitor@alexpy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:32977/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

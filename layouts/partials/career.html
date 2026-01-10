@@ -1,0 +1,17 @@
+<h1>Career</h1>
+
+<div class="career-list">
+{{ range .Site.Data.career.positions }}
+    <div class="career-position">
+        <h2 style="margin-bottom: 0.25rem;">
+            <a href="{{ .company_url }}" target="_blank" rel="noopener noreferrer">{{ .title }} at {{ .company }}</a>
+        </h2>
+        <div class="career-dates" style="margin-top: 0; margin-bottom: 0.25rem;">{{ .start_date }} - {{ .end_date }}</div>
+        <ul class="career-contributions" style="margin-top: 0;">
+            {{ range .contributions }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+</div>

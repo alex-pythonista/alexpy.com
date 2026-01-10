@@ -1,0 +1,21 @@
+baseURL = 'https://alexpy.com/'
+languageCode = 'en-us'
+title = 'visitor@alexpy'
+theme = 'hugo-theme-console'
+
+[params]
+  description = "Welcome to the universe of AlexPy."
+
+  # Shorten title on mobile (e.g., "alexpy" -> "lx")
+  titleCutting = true
+
+  # Page load animation (see https://animate.style/)
+  animateStyle = "animated zoomIn fast"
+
+[[params.navlinks]]
+  name = "About"
+  url = "/about/"
+
+[[params.navlinks]]
+  name = "Posts"
+  url = "/posts/"

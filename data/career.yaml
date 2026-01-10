@@ -1,0 +1,30 @@
+positions:
+  - title: "Senior Software Engineer"
+    company: "Tech Corp"
+    company_url: "https://example.com/techcorp"
+    start_date: "2023-01"
+    end_date: "Present"
+    contributions:
+      - "Led development of microservices architecture serving 1M+ users"
+      - "Improved API response time by 40% through optimization"
+      - "Mentored team of 5 junior engineers"
+
+  - title: "Software Engineer"
+    company: "StartupXYZ"
+    company_url: "https://example.com/startupxyz"
+    start_date: "2021-06"
+    end_date: "2022-12"
+    contributions:
+      - "Built real-time data processing pipeline using Python and Kafka"
+      - "Implemented CI/CD pipeline reducing deployment time by 60%"
+      - "Developed RESTful APIs serving 100K+ daily requests"
+
+  - title: "Junior Developer"
+    company: "Digital Solutions Inc"
+    company_url: "https://example.com/digitalsolutions"
+    start_date: "2019-08"
+    end_date: "2021-05"
+    contributions:
+      - "Developed full-stack web applications using React and Node.js"
+      - "Collaborated with design team to implement responsive UI components"
+      - "Fixed critical bugs and improved code coverage to 85%"
