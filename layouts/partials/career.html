@@ -6,10 +6,12 @@
         <h2 style="margin-bottom: 0.25rem;">
             <a href="{{ .company_url }}" target="_blank" rel="noopener noreferrer">{{ .title }} at {{ .company }}</a>
         </h2>
-        <div class="career-dates" style="margin-top: 0; margin-bottom: 0.25rem;">{{ .start_date }} - {{ .end_date }}</div>
+        <div class="career-dates" style="margin-top: 0; margin-bottom: 0.25rem;">
+            {{ if .location }}📍 {{ .location }} | {{ end }}{{ if eq .start_date "Present" }}{{ .start_date }}{{ else }}{{ time.Format "Jan 2006" (time.AsTime (printf "%s-01" .start_date)) }}{{ end }} - {{ if eq .end_date "Present" }}{{ .end_date }}{{ else }}{{ time.Format "Jan 2006" (time.AsTime (printf "%s-01" .end_date)) }}{{ end }}
+        </div>
         <ul class="career-contributions" style="margin-top: 0;">
             {{ range .contributions }}
-            <li>{{ . }}</li>
+            <li>{{ . | safeHTML }}</li>
             {{ end }}
         </ul>
     </div>
