@@ -311,3 +311,20 @@ figure {
         padding-top: 5px;
     }
 }
+
+.chip {
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 2px 3px 2px 0;
+    font-size: 0.78em;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.chip-green  { color: #2dc55e; border-color: #2dc55e; }
+.chip-cyan   { color: #3cc8d8; border-color: #3cc8d8; }
+.chip-yellow { color: #d4a843; border-color: #d4a843; }
+.chip-red    { color: #d94f5c; border-color: #d94f5c; }
+.chip-blue   { color: #5b9fef; border-color: #5b9fef; }
+.chip-purple { color: #b07cd8; border-color: #b07cd8; }
