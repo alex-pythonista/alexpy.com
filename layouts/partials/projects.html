@@ -1,0 +1,15 @@
+<h1>Projects & Open Source Contributions</h1>
+
+<div class="projects-list">
+{{ range .Site.Data.projects.projects }}
+    <div class="project-entry">
+        <h2 style="margin-bottom: 0.25rem;">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+        </h2>
+        <p style="margin-top: 0; margin-bottom: 0.25rem;">{{ .description | safeHTML }}</p>
+        <div style="margin-top: 0;">
+            {{ $colors := slice "green" "cyan" "yellow" "red" "blue" "purple" }}{{ range $i, $tech := .tech_stack }}<span class="chip chip-{{ index $colors (mod $i (len $colors)) }}">{{ $tech }}</span>{{ end }}
+        </div>
+    </div>
+{{ end }}
+</div>

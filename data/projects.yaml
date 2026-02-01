@@ -1,0 +1,8 @@
+projects:
+  - name: "Helm - Steer your finance with AI"
+    url: "https://github.com/ASHWIN776/helm"
+    description: "Helm is a platform for managing your finances with AI. It helps you track your spending, save money, and keep tracks of your hangout split bills smartly."
+    tech_stack:
+      - "TypeScript"
+      - "React Native"
+      - "Expo"

@@ -15,7 +15,7 @@ positions:
     company_url: "https://www.upwork.com/freelancers/~01c70542cd46c1caed"
     location: "Remote"
     start_date: "2023-10"
-    end_date: "2024-09"
+    end_date: "2024-10"
     contributions:
       - "Built real-time chat application backend on <b>Python/Django</b>, and <b>WebSocket</b>."
       - "Managed AWS services: <b>EC2</b>, <b>S3</b>, <b>CloudFront</b> etc. for clients."
